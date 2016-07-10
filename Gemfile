@@ -8,16 +8,14 @@ end
 
 gem 'mocha'
 gem 'diff-lcs'
-gem 'json_pure'
-gem 'json'
-gem 'metadata-json-lint'
 gem 'puppetlabs_spec_helper', '>= 0.1.0'
 gem 'facter', '>= 1.7.0'
 gem 'rspec-puppet'
 gem 'rspec', '~> 3.4.0'
 gem 'rake', '~> 11.1.2'
+gem 'metadata-json-lint'
 
-gem 'puppet-lint', :git => 'https://github.com/rodjek/puppet-lint.git'
+gem 'puppet-lint', '~> 1.0.0'
 gem 'puppet-lint-absolute_classname-check'
 gem 'puppet-lint-alias-check'
 gem 'puppet-lint-empty_string-check'
