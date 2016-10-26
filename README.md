@@ -33,7 +33,7 @@ vault::config_hash:
     listener:
         tcp:
             address: "%{::fqdn}:8200"
-            tls_disable: true
+            tls_disable: 1
     telemetry:
         statsite_address: '127.0.0.1:8125'
         disable_hostname: true
@@ -49,7 +49,7 @@ To run multiple listeners, for example disabling TLS on 127.0.0.1, but requiring
     listener:
         - tcp:
             address: "127.0.0.1:8200"
-            tls_disable: true
+            tls_disable: 1
         - tcp:
             address: "%{::fqdn}:8200"
             tls_cert_file: "/path/to/cert.pub"
